@@ -6,14 +6,17 @@ Data was obtained using the Scopus server. Criteria to obtain the references inc
 
 The searching criteria used in scoups is the following:
 
-`TITLE-ABS-KEY ( ( ( evolution AND development ) OR evo-devo ) AND morphology ) AND ( LIMIT-TO ( PUBYEAR , 2018 ) OR LIMIT-TO ( PUBYEAR , 2019 ) OR LIMIT-TO ( PUBYEAR , 2020 ) OR LIMIT-TO ( PUBYEAR , 2021 ) OR LIMIT-TO ( PUBYEAR , 2022 ) OR LIMIT-TO ( PUBYEAR , 2023 ) )`
+`TITLE-ABS-KEY ( ( evodevo OR evo-devo ) AND ( morphology OR organism OR phenotype OR genotype OR modularity OR homology OR ontogeny OR evolvability OR heterochrony OR metamorphosis ) )`
 
 We decided to limit publications from 2018 to the present to see the recent trends. 
 
 We also downloaded all articles from to specialized journals to see if theres any bias or more frequent subject of study within the evo-devo journals. Data was downloaded from Evolution & Development and EvoDevo. 
 
-Within the script folder there is script that uses the `R` package [bibliometrix](https://www.bibliometrix.org/home/index.php/blog/133-the-exponential-growth-of-scientific-publications)
+Within the script folder there is script NAMED `bibliographic_analysis.R` that uses the `R` package [bibliometrix](https://www.bibliometrix.org/home/index.php/blog/133-the-exponential-growth-of-scientific-publications)
 to generate some useful plots. 
+
+One additional search refinement was the following: 
+`TITLE-ABS-KEY ( ( evolution AND development AND ( evodevo OR evo-devo ) ) AND ( morphology OR organism OR phenotype OR genotype OR modularity OR homology ) )`
 
 
 
